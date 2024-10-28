@@ -1,0 +1,177 @@
+body{
+	margin: auto;
+  	width: 100%;
+  	padding: 0px;
+}
+header {
+	-moz-box-shadow: 0 0 5px 5px #999;
+	-webkit-box-shadow: 0 0 5px 5px #999;
+}
+h1, img {
+	display: inline-block;
+}
+h1 {
+	color: #2E0039;
+}
+div {
+	display: inline-block;
+}
+
+footer {
+  background-color: #2E0039;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+
+
+#units {
+	background-color: #2E0039;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	width: 218px;
+}
+#quantity {
+	background-color: #2E0039;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	-webkit-appearance: none;
+	-moz-appearance: textfield;
+	width: 221px;
+	text-align: right;
+}
+#converterBox {
+	background-color:#2E0039;
+	width: 714px;
+	height: 193px;
+	padding: 0px;
+	border-radius: 20px;
+	
+	margin-top: 50px;
+	display: flex;
+	align-items: flex-start;
+	
+	flex-direction: column;
+}
+#saveBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: center;
+	width: 714px;
+	height: 65%;
+}
+#saveText {
+	width:100%;
+}
+#savedData {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.row {
+	float: left;
+	text-align: left;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 4%;
+	width:90%;
+}
+
+.textWhite {
+	color: white;
+}
+.center {
+	margin-left: 33%;
+	margin-right: 33%;
+	display: flex;
+    align-items: center;
+	
+}
+
+.loadedData {
+	background-color: #E3E3E3;
+	width: 349px;
+	height: 38px;
+	display: flex;
+	align-items: center;
+    margin: 5px;
+}
+
+#convertText {
+	font-size: 30px;
+}
+
+#exchangeWhite {
+	width: 24px;
+	height: 24px;
+}
+#result {
+	float:right;
+	text-align: right;
+	font-size: 30px;
+	width: 190px;
+	height: 38px;
+	position:relative;
+	top: -10px;
+}
+#resultUnit {
+	float:right;
+	text-align: left;
+	font-size: 30px;
+	width: 80px;
+	height: 38px;
+	position:relative;
+	top: -10px;
+	margin-left: 5px;
+}
+#cross{
+	width: 24px;
+	height: 24px;
+	margin-left: auto;
+	
+	
+}
+
+@media only screen and (max-width: 600px) {
+	.center {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	
+	#converterBox {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+
+    #result {
+        font-size: 30px;
+        width: 150px;
+        text-align: right;
+        margin-right: 5px;
+    }
+    
+    #resultUnit {
+        font-size: 30px;
+        width: 80px;
+        text-align: left;
+    }
+    #saveText {
+		width: 90%;
+	}
+	
+}
